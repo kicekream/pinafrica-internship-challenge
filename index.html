@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Registration</title>
+    <title>Registration Form</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
@@ -12,145 +12,146 @@
 
   <body>
     <section class="section container">
-
-        <form>
-
-      <div class="field">
-        <h1 class="title">Teach Kids Code</h1>
-        <p class="subtitle">Registration form</p>
-      </div>
-
-      <div class="file is-boxed">
-        <label class="file-label">
-          <input class="file-input" type="file" name="passport" required>
-       
-            <span class="file-label">
-              Click to Upload a Passport photograph
-            </span>
-          </span>
-        </label>
-      </div>
-
-      <div class="field">
-        <label class="label">First Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Firstname" required />
+      <form>
+        <div class="intro">
+          <h1 class="title">Teach Kids Code</h1>
+          <p class="subtitle">Registration form</p>
         </div>
-      </div>
 
-      <div class="field">
-        <label class="label">Last Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Lastname" required />
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Age</label>
-        <div class="control">
+        <div class="field">
+          <label for="avatar"
+            ><p><br />Choose a profile picture:</p></label
+          >
+          <p><br /></p>
           <input
-            class="input"
-            type="number"
-            placeholder="Age"
-            min="1"
-            max="18"
-            step="1"
+            type="file"
+            id="avatar"
+            name="avatar"
+            accept="image/png, image/jpeg"
             required
           />
         </div>
-        <p class="help">Age should be less than or equal to 18</p>
-      </div>
 
-      <div class="field">
-        <label class="label" required>Gender</label>
-        <div class="select">
-          <select>
-            <option>Male</option>
-            <option>Female</option>
-          </select>
+        <div class="field">
+          <label class="label">First Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Firstname" required />
+          </div>
         </div>
-      </div>
 
-      <div class="field">
-        <div class="control">
-          <label class="label">Do you have access to the internet?</label>
-          <label class="radio">
-            <input type="radio" name="gotLaptop" required/>
-            Yes
-          </label>
-          <label class="radio">
-            <input type="radio" name="gotLaptop" disabled />
-            No
-          </label>
+        <div class="field">
+          <label class="label">Last Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Lastname" required />
+          </div>
         </div>
-        <p class="help">This is a Basic requirement for this class</p>
-      </div>
 
-      <div class="field">
-        <div class="control">
-          <label class="label">Do you have a PC?</label>
-          <label class="radio">
-            <input type="radio" name="gotInternet" required/>
-            Yes
-          </label>
-          <label class="radio">
-            <input type="radio" name="gotInternet" disabled />
-            No
-          </label>
+        <div class="field">
+          <label class="label">Age</label>
+          <div class="control">
+            <input
+              class="input"
+              type="number"
+              placeholder="Age"
+              min="1"
+              max="18"
+              step="1"
+              required
+            />
+          </div>
+          <p class="help">Age should be less than or equal to 18</p>
         </div>
-        <p class="help">This is a Basic requirement for this class</p>
-      </div>
 
-      <div class="field">
-        <label class="label">Name of Parent/Guardian</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Full Name" required />
+        <div class="field">
+          <label class="label" required>Gender</label>
+          <div class="select">
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
         </div>
-      </div>
 
-      <div class="field">
-        <label class="label">Phone number Parent/Guardian</label>
-        <div class="control">
-          <input
-            class="input"
-            type="number"
-            placeholder="Phone Number"
-            required
-          />
+        <div class="field">
+          <div class="control">
+            <label class="label">Do you have access to the internet?</label>
+            <label class="radio">
+              <input type="radio" name="gotLaptop" required />
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="gotLaptop" disabled />
+              No
+            </label>
+          </div>
+          <p class="help">This is a Basic requirement for this class</p>
         </div>
-      </div>
 
-      <div class="field">
-        <label class="label" type="email">Email of Parent/Guardian</label>
-        <div class="control">
-          <input
-            class="input"
-            type="email"
-            placeholder="abc@example.com"
-            required
-          />
+        <div class="field">
+          <div class="control">
+            <label class="label">Do you have a PC?</label>
+            <label class="radio">
+              <input type="radio" name="gotInternet" required />
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="gotInternet" disabled />
+              No
+            </label>
+          </div>
+          <p class="help">This is a Basic requirement for this class</p>
         </div>
-      </div>
 
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox" required/>
-            I hereby give my permission for my child/ward to take part in the
-            training for the duration of the program.
-          </label>
+        <div class="field">
+          <label class="label">Name of Parent/Guardian</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Full Name" required />
+          </div>
         </div>
-      </div>
 
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link">Submit</button>
+        <div class="field">
+          <label class="label">Phone number Parent/Guardian</label>
+          <div class="control">
+            <input
+              class="input"
+              type="number"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
         </div>
-        <div class="control">
-          <button class="button is-warning" type="reset">Clear felds</button>
+
+        <div class="field">
+          <label class="label" type="email">Email of Parent/Guardian</label>
+          <div class="control">
+            <input
+              class="input"
+              type="email"
+              placeholder="abc@example.com"
+              required
+            />
+          </div>
         </div>
-      </div>
-    </form>
+
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" required />
+              I hereby give my permission for my child/ward to take part in the
+              training for the duration of the program.
+            </label>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-warning" type="reset">Clear felds</button>
+          </div>
+        </div>
+      </form>
     </section>
   </body>
 </html>
