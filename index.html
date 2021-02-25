@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <title>Registration</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
@@ -13,6 +13,8 @@
   <body>
     <section class="section container">
 
+        <form>
+
       <div class="field">
         <h1 class="title">Teach Kids Code</h1>
         <p class="subtitle">Registration form</p>
@@ -20,7 +22,7 @@
 
       <div class="file is-boxed">
         <label class="file-label">
-          <input class="file-input" type="file" name="passport">
+          <input class="file-input" type="file" name="passport" required>
        
             <span class="file-label">
               Click to Upload a Passport photograph
@@ -60,7 +62,7 @@
       </div>
 
       <div class="field">
-        <label class="label">Gender</label>
+        <label class="label" required>Gender</label>
         <div class="select">
           <select>
             <option>Male</option>
@@ -73,7 +75,7 @@
         <div class="control">
           <label class="label">Do you have access to the internet?</label>
           <label class="radio">
-            <input type="radio" name="gotLaptop" />
+            <input type="radio" name="gotLaptop" required/>
             Yes
           </label>
           <label class="radio">
@@ -88,7 +90,7 @@
         <div class="control">
           <label class="label">Do you have a PC?</label>
           <label class="radio">
-            <input type="radio" name="gotInternet" />
+            <input type="radio" name="gotInternet" required/>
             Yes
           </label>
           <label class="radio">
@@ -133,7 +135,7 @@
       <div class="field">
         <div class="control">
           <label class="checkbox">
-            <input type="checkbox" />
+            <input type="checkbox" required/>
             I hereby give my permission for my child/ward to take part in the
             training for the duration of the program.
           </label>
@@ -148,6 +150,7 @@
           <button class="button is-warning" type="reset">Clear felds</button>
         </div>
       </div>
+    </form>
     </section>
   </body>
 </html>
